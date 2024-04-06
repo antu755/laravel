@@ -21,4 +21,5 @@ jobs:
         port: 22
         script: |
           cd /home/laravel/public
+          rm -rf laravel
           git clone https://${{ secrets.PAT_TOKEN }}@github.com/antu755/laravel.git
